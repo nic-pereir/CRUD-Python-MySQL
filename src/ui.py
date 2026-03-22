@@ -22,9 +22,9 @@ def get_product_id():
             product_id = int(input("Enter the product id: "))
             if product_id < 0:
                 print("The id must be greater than 0.")
+            return product_id
         except (ValueError, TypeError):
             print("The id must be an integer.")
-        return product_id
 
 def get_product_data():
     while True:
