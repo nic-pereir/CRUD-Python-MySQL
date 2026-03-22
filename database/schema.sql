@@ -1,0 +1,16 @@
+CREATE DATABASE crud_python;
+USE crud_python;
+
+CREATE TABLE products(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10,2),
+    stock INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+ALTER TABLE products 
+MODIFY price DECIMAL(10, 2) NOT NULL,
+MODIFY stock INT NOT NULL;
+
+SELECT * FROM products
