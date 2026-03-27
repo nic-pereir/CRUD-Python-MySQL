@@ -30,7 +30,7 @@ while True:
         products = src.read_products(connection)
         
         print()
-        print("ID | Nome        | Preço   | Estoque")
+        print("ID | Name        | Price   | Stock")
         print("-" * 40)
 
         for product in products:
